@@ -1,0 +1,27 @@
+# Core Data Handling and Math
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Statistical Modeling and Econometrics
+statsmodels>=0.14.0
+
+# Asynchronous Networking (for Ingestion.py)
+# Used for connecting to Binance WebSocket
+websockets>=11.0
+nest-asyncio>=1.5.0  # Required to run the asyncio loop inside the Streamlit thread
+
+# Data Storage
+# 1. High-speed, in-memory tick storage
+redis>=4.5.0
+# 2. Persistent, file-based OHLCV storage
+duckdb>=0.8.0
+
+# Frontend and Visualization
+# Interactive dashboard framework (python-based framework required [cite: 11])
+streamlit>=1.24.0
+# Interactive charting library (supports zoom, pan, hover [cite: 14])
+plotly>=5.15.0
+
+# Utilities
+typing-extensions>=4.6.0 # Often needed for modern type hinting
