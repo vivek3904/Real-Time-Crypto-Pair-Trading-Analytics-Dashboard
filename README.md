@@ -36,11 +36,11 @@ The entire system is designed to launch with a single command via PyCharm's Stre
 
 ## **📈 Analytical Methodology**
 The dashboard performs two critical analyses on the chosen pair's log prices over the rolling window:
-- 1. **Ordinary Least Squares (OLS) Regression**:   
+1. **Ordinary Least Squares (OLS) Regression**:   
                     $$\text{Log}(Y_t) = \alpha + \beta \cdot \text{Log}(X_t) + \epsilon_t$$
         - The slope $\beta$ is the **Hedge Ratio.**
         - The residual $\epsilon_t$ is the **Spread.**
         - The **Z-Score** is calculated as the number of standard deviations the             latest spread is away from the mean spread.
-- 2. Augmented Dickey-Fuller (ADF) TestThe ADF Test is triggered manually to check for **cointegration** (or stationarity of the spread).
+2. Augmented Dickey-Fuller (ADF) TestThe ADF Test is triggered manually to check for **cointegration** (or stationarity of the spread).
         - **Hypothesis:** The null hypothesis ($H_0$) is that the spread has unit             root (is non-stationary, or the pair is not cointegrated).
         - **P-Value Interpretation:** If the **ADF P-Value is less than 0.05**,               the null hypothesis is rejected, suggesting the spread is stationary               and the pair is suitable for mean-reversion trading.
