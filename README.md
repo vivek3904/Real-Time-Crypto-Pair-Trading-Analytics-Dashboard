@@ -19,13 +19,10 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 - **Binance API Key:** The ingestion worker connects to the public Binance stream; no API keys are required for this specific implementation.
 
 - **1. Clone the Repository**
-'''bash
-git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
-cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]''' </pre>
+git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard] cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]''' </pre>
 
 - **2. Install Python Dependencies**
 Create a virtual environment and install all necessary packages:
-'''bash
 pip install -r requirements.txt''' </pre>
 
 - **3. Run the Application**
@@ -33,7 +30,6 @@ The entire system is designed to launch with a single command via PyCharm's Stre
 
    - Make sure Redis is running first!
    - Run:
-     '''bash
      streamlit run app.py ''' </pre>
    - The application will open in your browser (http://localhost:8501)
 
