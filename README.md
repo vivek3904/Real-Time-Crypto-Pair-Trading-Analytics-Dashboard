@@ -17,10 +17,12 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 - **Redis Server:** The Redis server must be running locally on the default port (6379).
     - **WSL/Linux/macOS:** Run redis-server in a separate terminal.
 - **Binance API Key:** The ingestion worker connects to the public Binance stream; no API keys are required for this specific implementation.
+
 - **1. Clone the Repository**
-```bash
+```
 git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
-cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]\'''
+cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
+'''
 
 - **2. Install Python Dependencies**
 Create a virtual environment and install all necessary packages:
