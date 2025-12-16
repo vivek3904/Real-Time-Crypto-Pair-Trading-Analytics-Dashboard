@@ -35,7 +35,7 @@ The entire system is designed to launch with a single command via PyCharm's Stre
 
 ## **📈 Analytical Methodology**
 The dashboard performs two critical analyses on the chosen pair's log prices over the rolling window:
-- 1. **Ordinary Least Squares (OLS) Regression**
+- 1. **Ordinary Least Squares (OLS) Regression**: 
                     $$\text{Log}(Y_t) = \alpha + \beta \cdot \text{Log}(X_t) + \epsilon_t$$
         - The slope $\beta$ is the **Hedge Ratio.**
         - The residual $\epsilon_t$ is the **Spread.**
