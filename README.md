@@ -20,7 +20,7 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 - **1. Clone the Repository**
 ```bash
 git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
-cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]'''
+cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]\'''
 
 - **2. Install Python Dependencies**
 Create a virtual environment and install all necessary packages:
