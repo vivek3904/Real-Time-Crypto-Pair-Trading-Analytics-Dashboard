@@ -9,9 +9,11 @@ This project implements a low-latency, real-time data pipeline and dashboard for
 ## 🏛️ System Architecture
 The application runs as a cohesive, multi-threaded system orchestrated by app.py.
 - **Ingestion Worker (ingestion.py):** Establishes an asynchronous connection (using asyncio and websockets) to the Binance WS and pushes every raw trade tick directly to a Redis list.
-
 - **Resampler Worker (storage.py):** Runs in a separate thread, continuously pulling raw ticks from Redis, resampling them using Pandas into OHLCV bars (1s, 1min, 5min), and persisting them in the DuckDB file (quant_data.db).
-
 - **Analytics Engine (analytics.py):** Reads the resampled OHLCV data from DuckDB, calculates log returns, runs OLS and the ADF test using statsmodels, and generates the Z-Score and Rolling Correlation series.
-
 - **Dashboard (app.py):** Streamlit frontend that fetches the latest results from the Analytics Engine and Plotly charts, updating the display every few seconds.
+## **⚙️ Setup and Installation**
+- **Python 3.8+**
+- **Redis Server:** The Redis server must be running locally on the default port (6379).
+    - **WSL/Linux/macOS:** Run redis-server in a separate terminal.
+- **Binance API Key:** The ingestion worker connects to the public Binance stream; no API keys are required for this specific implementation.
