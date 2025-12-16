@@ -18,7 +18,6 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
     - **WSL/Linux/macOS:** Run redis-server in a separate terminal.
 - **Binance API Key:** The ingestion worker connects to the public Binance stream; no API keys are required for this specific implementation.
 **1. Clone the Repository**
-  ```bash
-#!/bin/bash
-git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
-cd [Real-Time Crypto Pair Trading Analytics Dashboard]
+```bash
+git clone [[YOUR_REPOSITORY_LINK](https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard)]
+cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
