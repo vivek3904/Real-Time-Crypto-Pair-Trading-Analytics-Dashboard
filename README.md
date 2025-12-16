@@ -22,8 +22,8 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]   
 cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
 
-**2. Install Python Dependencies**
-Create a virtual environment and install all necessary packages:
+**2. Install Python Dependencies**  
+Create a virtual environment and install all necessary packages:  
 pip install -r requirements.txt </pre>
 
 **3. Run the Application**
