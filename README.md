@@ -20,18 +20,19 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 **1. Clone the Repository**
 ```bash
 git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
-cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
+cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]'''
+
 **2. Install Python Dependencies**
 Create a virtual environment and install all necessary packages:
 ```bash
-pip install -r requirements.txt
-3. Run the Application
+pip install -r requirements.txt'''
+**3. Run the Application**
 The entire system is designed to launch with a single command via PyCharm's Streamlit configuration (or directly in your terminal).
 
    - Make sure Redis is running first!
    - Run:
      ```bash
-      streamlit run app.py
+      streamlit run app.py '''
    - The application will open in your browser (http://localhost:8501)
 ## **📈 Analytical Methodology**
 The dashboard performs two critical analyses on the chosen pair's log prices over the rolling window:
