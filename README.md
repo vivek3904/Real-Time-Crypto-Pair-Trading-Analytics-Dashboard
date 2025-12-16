@@ -30,7 +30,7 @@ pip install -r requirements.txt </pre>
 The entire system is designed to launch with a single command via PyCharm's Streamlit configuration (or directly in your terminal).
 
    - Make sure Redis is running first!
-   - Run:
+   - Run:  
      streamlit run app.py </pre>
    - The application will open in your browser (http://localhost:8501)
 
