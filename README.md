@@ -17,16 +17,16 @@ The application runs as a cohesive, multi-threaded system orchestrated by app.py
 - **Redis Server:** The Redis server must be running locally on the default port (6379).
     - **WSL/Linux/macOS:** Run redis-server in a separate terminal.
 - **Binance API Key:** The ingestion worker connects to the public Binance stream; no API keys are required for this specific implementation.
-**1. Clone the Repository**
+- **1. Clone the Repository**
 ```bash
 git clone [https://github.com/vivek3904/Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]
 cd [Real-Time-Crypto-Pair-Trading-Analytics-Dashboard]'''
 
-**2. Install Python Dependencies**
+- **2. Install Python Dependencies**
 Create a virtual environment and install all necessary packages:
 ```bash
 pip install -r requirements.txt'''
-**3. Run the Application**
+- **3. Run the Application**
 The entire system is designed to launch with a single command via PyCharm's Streamlit configuration (or directly in your terminal).
 
    - Make sure Redis is running first!
@@ -36,10 +36,10 @@ The entire system is designed to launch with a single command via PyCharm's Stre
    - The application will open in your browser (http://localhost:8501)
 ## **📈 Analytical Methodology**
 The dashboard performs two critical analyses on the chosen pair's log prices over the rolling window:
-1. **Ordinary Least Squares (OLS) Regression**$$\text{Log}(Y_t) = \alpha + \beta \cdot \text{Log}(X_t) + \epsilon_t$$
+- 1. **Ordinary Least Squares (OLS) Regression**$$\text{Log}(Y_t) = \alpha + \beta \cdot \text{Log}(X_t) + \epsilon_t$$
         - The slope $\beta$ is the **Hedge Ratio.**
         - The residual $\epsilon_t$ is the **Spread.**
         - The **Z-Score** is calculated as the number of standard deviations the             latest spread is away from the mean spread.
-2. Augmented Dickey-Fuller (ADF) TestThe ADF Test is triggered manually to check for **cointegration** (or stationarity of the spread).
+- 2. Augmented Dickey-Fuller (ADF) TestThe ADF Test is triggered manually to check for **cointegration** (or stationarity of the spread).
         - **Hypothesis:** The null hypothesis ($H_0$) is that the spread has unit             root (is non-stationary, or the pair is not cointegrated).
         - **P-Value Interpretation:** If the **ADF P-Value is less than 0.05**,               the null hypothesis is rejected, suggesting the spread is stationary               and the pair is suitable for mean-reversion trading.
